@@ -15,7 +15,7 @@ public class Main {
          * There is a default constructor that takes 0 arguments.
          * However, it is no longer available after we write our own constructor in the Rectangle class.
          */
-        // Rectangle rect = new Rectangle();
+        Rectangle rect0 = new Rectangle();
 
         Rectangle rect = new Rectangle(5.4, 3.0);
         System.out.println(rect);
@@ -38,5 +38,19 @@ public class Main {
          */
         Rectangle rect2 = new Rectangle(12.2, 9.17);
         System.out.println(rect.equals(rect2));
+        // Don't do a reference copy.
+        // Rectangle rect3 = rect;
+        // Call a copy method.
+        Rectangle rect3 = rect.copy();
+        System.out.println(rect);
+        System.out.println(rect3);
+        rect3.setLength(rect3.getLength()*2);
+        System.out.println(rect3);
+        System.out.println(rect);
+        System.out.println(rect0);
+        // We could also make a copy constructor.
+        Rectangle rect4 = new Rectangle(rect);
+        System.out.println(rect);
+        System.out.println(rect4);
     }
 }

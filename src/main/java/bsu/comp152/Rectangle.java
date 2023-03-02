@@ -24,9 +24,19 @@ public class Rectangle {
      * A constructor is public.
      * A constructor has no return type, not even void!
      */
-    public Rectangle(double len, double wid){
-        length = len;
-        width = wid;
+    public Rectangle(double length, double width){
+        this.length = length;
+        this.width = width;
+    }
+
+    public Rectangle(){
+        length = 0.0;
+        width = 0.0;
+    }
+
+    public Rectangle(Rectangle original){
+        length = original.length;
+        width = original.width;
     }
 
     /**
@@ -61,6 +71,11 @@ public class Rectangle {
 
     public void setWidth(double wid){
         width = wid;
+    }
+
+    public Rectangle copy(){
+        Rectangle r = new Rectangle(length, width);
+        return r;
     }
 
 
