@@ -1,7 +1,5 @@
 package bsu.comp152;
 
-import org.w3c.dom.css.Rect;
-
 /**
  * Is a (blueprint) class for creating and manipulating Rectangle objects.
  */
