@@ -1,5 +1,7 @@
 package bsu.comp152;
 
+import java.util.ArrayList;
+
 /**
  * Is a (container) class for the Java program we run. It contains a main method with client code (a driver program) to create and manipulate Rectangle objects.
  */
@@ -52,5 +54,11 @@ public class Main {
         Rectangle rect4 = new Rectangle(rect);
         System.out.println(rect);
         System.out.println(rect4);
+
+        ArrayList<Rectangle> rectangleList = new ArrayList<Rectangle>();
+        rectangleList.add(rect);
+        rectangleList.add(rect2);
+
+        System.out.println(rectangleList);
     }
 }
