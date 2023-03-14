@@ -60,5 +60,16 @@ public class Main {
         rectangleList.add(rect2);
 
         System.out.println(rectangleList);
+        System.out.println(rect2);
+        System.out.printf("Rect2 is a square: %b\n", rect2.isSquare());
+        rect2.setWidth(12.2);
+        System.out.println(rect2);
+        System.out.printf("Rect2 is a square: %b\n", rect2.isSquare());
+        System.out.printf("Rect2 area: %f\n", rect2.getArea());
+        System.out.println(rect3);
+        rect3.rotate();
+        System.out.println(rect3);
+
+
     }
 }
